@@ -57,5 +57,19 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="DataBase" />
+    <Folder Include="DataBase\Table" />
+    <Folder Include="DataBase\StoredProcudure" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="DataBase\Table\Studenci.sql" />
+    <Build Include="DataBase\StoredProcudure\DodajStudenta.sql" />
+    <Build Include="DataBase\StoredProcudure\UpdateStudneta.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SQL.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StudenciDB.publish.publish.xml" />
   </ItemGroup>
 </Project>
