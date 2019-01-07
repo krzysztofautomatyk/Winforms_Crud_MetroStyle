@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class Form1 : Form
+    public partial class NewUser : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public NewUser()
         {
             InitializeComponent();
+        }
+
+        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
